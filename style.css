@@ -1,0 +1,158 @@
+.main{
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/ca15fd28-b624-4852-8bfe-9cdd5c88475d/IN-en-20240520-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    height: 110vh;
+    margin-bottom: 6px;
+}
+body{background-color: rgb(32, 31, 31);}
+.main .box{
+    height: 110vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) , rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473));
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+.signin{
+    background-color: rgb(238, 7, 7);
+    color: white;
+    border-radius: 5px;
+    padding: 11px 16px;
+    border: none;
+}
+select, .opt{
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    border: 1px solid white;
+}
+.netflixico{
+    fill: red;
+    height: 40px;
+    left: 10vw;
+    
+}
+.netflixico , .navmingle {
+    position: absolute;
+    top: 24px;
+}
+.navmingle{
+    right: 10vw;
+}
+.box1{position: relative;}
+.box2{
+    position: absolute;
+    /* Using vw to make it responsive  */
+    top: 17vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+strong > h1{
+    margin: 14px;
+    text-emphasis-style: bold;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 820;
+}
+.toptext{
+    margin: 14px;
+    text-emphasis-style: bold;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.inflex{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+input{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 17px;
+}
+.start{
+    background-color: rgb(238, 7, 7);
+    border-radius: 6px;
+    padding: 18px;
+    border: none;
+    font-size: 19px;
+}
+.boxe2{
+    background-color: black;
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    align-items: center;
+    padding: 40px;
+    flex-direction: row;
+
+}
+.b12 , .b22 , .b42{
+    margin: 30px;
+}
+.imagsiz{
+    max-width: 400px;
+}
+@media screen and (max-width:800px) {
+    .boxe2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .b12 , .b22 , .b42{
+        text-align: center;
+    }
+    .imagsiz{
+        max-width: 80vw;
+    }
+}
+@media screen and (max-width:550px) {
+    .boxe2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .b12 , .b22 , .b42{
+        text-align: center;
+    }
+    .imagsiz{
+        max-width: 80vw;
+    }
+    strong > h1{
+        font-size: 34px;
+    }
+    .toptext{
+        font-size: 17px;
+    }
+    .box2{
+        top:40vw;
+    }
+    .netflixico{left:3vw}
+    .navmingle{right: 3vw;}
+    input{
+        padding: 12px;
+        max-width: 80vw;
+        font-size: 17px;
+        margin-left: 10vw;
+    }
+    .start{
+        background-color: rgb(238, 7, 7);
+        max-width: 80vw;
+        font-size: 19px;
+        margin-left: 10vw;
+    }
+    .inflex{
+        flex-direction: column;
+        
+    }
+}
